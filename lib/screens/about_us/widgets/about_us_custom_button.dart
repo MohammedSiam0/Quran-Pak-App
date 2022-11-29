@@ -1,10 +1,14 @@
-part of '../share_app.dart';
+import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
-class _ShareCustomButton extends StatelessWidget {
+import '../../../configs/app_theme.dart';
+import '../../../providers/app_provider.dart';
+
+class AboutUsCustomButton extends StatelessWidget {
   final String? text;
   final IconData? iconData;
   final void Function()? onPressed;
-  const _ShareCustomButton({
+  const AboutUsCustomButton({
     Key? key,
     required this.iconData,
     required this.text,

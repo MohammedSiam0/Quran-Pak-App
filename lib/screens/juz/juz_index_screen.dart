@@ -1,17 +1,21 @@
-import 'package:al_quran/animations/bottom_animation.dart';
-import 'package:al_quran/configs/app.dart';
-import 'package:al_quran/configs/configs.dart';
-import 'package:al_quran/cubits/juz/cubit.dart';
-import 'package:al_quran/providers/app_provider.dart';
-import 'package:al_quran/screens/surah/surah_index_screen.dart';
-import 'package:al_quran/utils/assets.dart';
-import 'package:al_quran/utils/juz.dart';
-import 'package:al_quran/widgets/button/app_back_button.dart';
-import 'package:al_quran/widgets/custom_image.dart';
-import 'package:al_quran/widgets/flare.dart';
-import 'package:al_quran/widgets/app/title.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+
+import '../../animations/bottom_animation.dart';
+import '../../configs/app.dart';
+import '../../configs/app_dimensions.dart';
+import '../../configs/app_theme.dart';
+import '../../configs/app_typography.dart';
+import '../../configs/space.dart';
+import '../../cubits/juz/cubit.dart';
+import '../../providers/app_provider.dart';
+import '../../utils/assets.dart';
+import '../../utils/juz.dart';
+import '../../widgets/app/title.dart';
+import '../../widgets/button/app_back_button.dart';
+import '../../widgets/custom_image.dart';
+import '../../widgets/flare.dart';
+import '../surah/surah_index_screen.dart';
 
 class JuzIndexScreen extends StatefulWidget {
   const JuzIndexScreen({Key? key}) : super(key: key);
@@ -73,7 +77,7 @@ class _JuzIndexScreenState extends State<JuzIndexScreen> {
                 },
                 decoration: InputDecoration(
                   contentPadding: Space.h,
-                  hintText: 'Search Juz Number here...',
+                  hintText: 'Search Juz Number...',
                   hintStyle: AppText.b2!.copyWith(
                     color: AppTheme.c!.textSub2,
                   ),

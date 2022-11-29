@@ -1,19 +1,22 @@
 import 'dart:io';
 import 'dart:async';
 import 'dart:math' as math;
-import 'package:al_quran/app_routes.dart';
-import 'package:al_quran/configs/app.dart';
-import 'package:al_quran/providers/app_provider.dart';
-import 'package:al_quran/utils/drawer.dart';
-import 'package:al_quran/widgets/button/app_button.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:al_quran/configs/configs.dart';
-import 'package:al_quran/widgets/app/app_name.dart';
-import 'package:al_quran/widgets/quran_rail.dart';
-import 'package:al_quran/widgets/calligraphy.dart';
-import 'package:al_quran/widgets/app/app_version.dart';
-import 'package:al_quran/widgets/app/drawer_app_name.dart';
+import '../../Routes/app_routes.dart';
+import '../../configs/app.dart';
+import '../../configs/app_dimensions.dart';
+import '../../configs/app_theme.dart';
+import '../../configs/app_typography.dart';
+import '../../configs/space.dart';
+import '../../providers/app_provider.dart';
+import '../../utils/drawer.dart';
+import '../../widgets/app/app_name.dart';
+import '../../widgets/app/app_version.dart';
+import '../../widgets/app/drawer_app_name.dart';
+import '../../widgets/button/app_button.dart';
+import '../../widgets/calligraphy.dart';
+import '../../widgets/quran_rail.dart';
 
 part 'widgets/main_screen.dart';
 part 'widgets/bottom_ayah.dart';
@@ -90,17 +93,8 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
               "Exit Application",
               style: TextStyle(fontWeight: FontWeight.bold),
             ),
-            content: const Text("Are You Sure?"),
+            content: const Text("Are You Sure You Want To Exit?"),
             actions: <Widget>[
-              TextButton(
-                child: const Text(
-                  "Yes",
-                  style: TextStyle(color: Colors.red),
-                ),
-                onPressed: () {
-                  exit(0);
-                },
-              ),
               TextButton(
                 child: const Text(
                   "No",
@@ -108,6 +102,15 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                 ),
                 onPressed: () {
                   Navigator.of(context).pop();
+                },
+              ),
+              TextButton(
+                child: const Text(
+                  "Yes",
+                  style: TextStyle(color: Colors.red),
+                ),
+                onPressed: () {
+                  exit(0);
                 },
               ),
             ],

@@ -3,7 +3,7 @@ class AppRoutes {
 
   static const home = 'home';
   static const page = 'page';
-  static const shareApp = 'shareApp';
+  static const aboutUs = 'aboutUs';
   static const splash = 'splash';
   static const helpGuide = 'helpGuide';
   static const surah = 'surah';

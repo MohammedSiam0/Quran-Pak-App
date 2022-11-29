@@ -1,5 +1,6 @@
-import 'package:al_quran/app_routes.dart';
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:quran_pak_app/Routes/app_routes.dart';
 
 class DrawerUtils {
   static const List items = [
@@ -29,9 +30,9 @@ class DrawerUtils {
       'route': AppRoutes.onboarding,
     },
     {
-      'title': 'Share App',
-      'icon': Icons.share_outlined,
-      'route': AppRoutes.shareApp,
+      'title': 'About Us',
+      'icon': FontAwesomeIcons.addressCard,
+      'route': AppRoutes.aboutUs,
     },
   ];
 }

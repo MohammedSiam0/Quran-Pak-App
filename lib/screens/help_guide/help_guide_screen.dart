@@ -1,12 +1,16 @@
-import 'package:al_quran/configs/app.dart';
-import 'package:al_quran/configs/configs.dart';
-import 'package:al_quran/utils/assets.dart';
-import 'package:al_quran/utils/links.dart';
-import 'package:al_quran/widgets/app/app_version.dart';
-import 'package:al_quran/widgets/button/app_back_button.dart';
-import 'package:al_quran/widgets/custom_image.dart';
-import 'package:al_quran/widgets/app/title.dart';
 import 'package:flutter/material.dart';
+import 'package:quran_pak_app/configs/app.dart';
+import 'package:quran_pak_app/configs/app_typography_ext.dart';
+
+import '../../configs/app_theme.dart';
+import '../../configs/app_typography.dart';
+import '../../configs/space.dart';
+import '../../utils/assets.dart';
+import '../../utils/links.dart';
+import '../../widgets/app/app_version.dart';
+import '../../widgets/app/title.dart';
+import '../../widgets/button/app_back_button.dart';
+import '../../widgets/custom_image.dart';
 
 class HelpGuide extends StatelessWidget {
   const HelpGuide({Key? key}) : super(key: key);
@@ -87,7 +91,7 @@ class Guidelines extends StatelessWidget {
             guideNo: 7,
             title: "Developer's Info",
             guideDescription:
-                "Name: ${Links.dev['name']} \nEmail: ${Links.dev['email']} \nGitHub: ${Links.dev['github']} \nWebsite: ${Links.dev['website']}",
+                "Name: ${Links.dev['name']} \nEmail: ${Links.dev['email']} \nGitHub: ${Links.dev['github']}",
           )
         ],
       ),
@@ -97,7 +101,7 @@ class Guidelines extends StatelessWidget {
 
 class GuideContainer extends StatelessWidget {
   final String title;
-  final String guideDescription;
+  final String? guideDescription;
   final int guideNo;
 
   const GuideContainer(
@@ -112,13 +116,13 @@ class GuideContainer extends StatelessWidget {
       padding: Space.all(),
       child: Column(
         children: <Widget>[
-          Text(
+          SelectableText(
             "\n$guideNo. $title",
             style: Theme.of(context).textTheme.bodyText1,
           ),
           Space.y1!,
-          Text(
-            guideDescription,
+          SelectableText(
+            guideDescription!,
             textAlign: TextAlign.justify,
             style: AppText.b1!.cl(AppTheme.c!.text!),
           ),

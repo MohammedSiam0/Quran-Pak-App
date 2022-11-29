@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-
 import '../../configs/app_theme.dart';
 import '../../providers/app_provider.dart';
 import '../../utils/assets.dart';
@@ -11,7 +10,6 @@ class DrawerAppName extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final appProvider = Provider.of<AppProvider>(context);
-
     double height = MediaQuery.of(context).size.height;
 
     return Row(

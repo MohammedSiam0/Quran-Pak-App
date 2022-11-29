@@ -1,26 +1,29 @@
-import 'package:al_quran/animations/bottom_animation.dart';
-import 'package:al_quran/configs/app.dart';
-import 'package:al_quran/configs/configs.dart';
-import 'package:al_quran/cubits/bookmarks/cubit.dart';
-import 'package:al_quran/cubits/chapter/cubit.dart';
-import 'package:al_quran/models/chapter/chapter.dart';
-import 'package:al_quran/models/juz/juz.dart';
-import 'package:al_quran/providers/app_provider.dart';
-import 'package:al_quran/utils/assets.dart';
-import 'package:al_quran/utils/juz.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:provider/provider.dart';
-import 'package:al_quran/widgets/flare.dart';
-import 'package:al_quran/widgets/app/title.dart';
-import 'package:al_quran/widgets/button/app_back_button.dart';
-import 'package:al_quran/widgets/custom_image.dart';
+
+import '../../animations/bottom_animation.dart';
+import '../../configs/app.dart';
+import '../../configs/app_dimensions.dart';
+import '../../configs/app_theme.dart';
+import '../../configs/app_typography.dart';
+import '../../configs/space.dart';
+import '../../cubits/bookmarks/cubit.dart';
+import '../../cubits/chapter/cubit.dart';
+import '../../models/chapter/chapter.dart';
+import '../../models/juz/juz.dart';
+import '../../providers/app_provider.dart';
+import '../../utils/assets.dart';
+import '../../utils/juz.dart';
+import '../../widgets/app/title.dart';
+import '../../widgets/button/app_back_button.dart';
+import '../../widgets/custom_image.dart';
+import '../../widgets/flare.dart';
 
 part '../page/page_screen.dart';
-
-part 'widgets/surah_tile.dart';
 part 'widgets/surah_app_bar.dart';
 part 'widgets/surah_information.dart';
+part 'widgets/surah_tile.dart';
 
 class SurahIndexScreen extends StatefulWidget {
   const SurahIndexScreen({Key? key}) : super(key: key);
