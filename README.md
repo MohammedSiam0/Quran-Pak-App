@@ -44,4 +44,4 @@ https://github.com/SeAliijaz
 
 If you liked the repo then kindly support it by giving it a star ⭐!
 
-Copyright (c) 2020 MUHAMMAD Ali
+Copyright (c) 2020 Muhammad Ali
