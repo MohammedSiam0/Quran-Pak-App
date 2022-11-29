@@ -30,7 +30,6 @@ API Used: https://alquran.cloud/api
 
 ✅ Bookmarks
 
-✅ Other fixes from Previous verion.
 
 #### Muhammad Ali
 
